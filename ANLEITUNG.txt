@@ -1,0 +1,43 @@
+FORM 12 (Plan 23.11.2026 – 14.02.2027) – Installation auf iPhone / iPad / Mac (offline nutzbar)
+
+Die App ist eine Web-App (PWA). Sie braucht einmal eine https-Adresse, danach läuft sie offline vom Home-Bildschirm.
+
+Variante A – GitHub Pages (kostenlos, dauerhaft)
+1. Auf github.com ein neues Repository anlegen, z. B. "form12" (Public).
+2. "Add file" → "Upload files" → alle Dateien aus diesem Ordner hochladen (index.html, sw.js, manifest.webmanifest, icon-180.png, icon-512.png) → Commit.
+3. Settings → Pages → Branch "main" / Root → Save. Nach ca. 1 Minute ist die App unter https://<dein-name>.github.io/form12/ erreichbar.
+4. Auf dem iPhone in Safari öffnen → Teilen → "Zum Home-Bildschirm". Einmal online öffnen, danach funktioniert sie offline.
+
+Variante B – Netlify Drop
+app.netlify.com/drop öffnen, den entpackten Ordner hineinziehen, Seite "claimen" (sonst wird sie nach einiger Zeit gelöscht), weiter wie Schritt 4.
+
+Variante C – Nur Mac
+index.html in Safari öffnen → Ablage → "Zum Dock hinzufügen". Läuft lokal ohne Internet.
+
+Wichtig
+- Deine Einträge liegen nur auf dem jeweiligen Gerät (lokaler Speicher). Für ein Backup oder den Wechsel aufs andere Gerät: Bereiche → Einstellungen & Export → Backup.
+- Apple Kalender: Bereiche → Einstellungen & Export → .ics exportieren → Datei öffnen → "Alle hinzufügen". Tipp: vorher in Apple Kalender einen eigenen Kalender "Form 12" anlegen und beim Import auswählen; nach größeren Verschiebungen diesen Kalender löschen und neu importieren.
+- Apple Watch: Exportierte Trainings erscheinen mit Erinnerung auf der Watch. Watch-Werte (Distanz, Zeit, Ø-HF, kcal) nach der Einheit im Training-Termin eintragen.
+- Bedienung: Termin antippen = Details, Aufgaben, Verschieben. Termin lange drücken und ziehen = verschieben (Tag- und Wochenansicht). Wischen links/rechts = nächster Tag bzw. nächste Woche.
+
+WIDGETS FÜR iPHONE, iPAD UND APPLE WATCH (alles offline)
+
+A) iPhone und iPad – Home-Bildschirm und Sperrbildschirm (App „Scriptable“)
+1. Die kostenlose App „Scriptable“ aus dem App Store installieren (auf jedem Gerät, auf dem das Widget erscheinen soll).
+2. Form12-Widget.js in der Dateien-App öffnen → Teilen → „Scriptable“ (oder in Scriptable mit + ein neues Skript anlegen und den Inhalt einfügen).
+   Tipp: Wenn Scriptable auf iPhone und iPad mit iCloud läuft, ist das Skript automatisch auf beiden Geräten.
+3. Das Skript in Scriptable genau „Form12“ nennen (wichtig für den Abgleich).
+4. Home-Bildschirm lange drücken → Bearbeiten → Widget hinzufügen → Scriptable → Größe wählen → Widget antippen → Script: „Form12“.
+   Größen: klein = nächster Termin · mittel = Ringe + 3 Termine · groß = Tagesplan + Kennzahlen · extra groß (nur iPad) = Tagesplan + die nächsten 3 Tage.
+5. Sperrbildschirm: Sperrbildschirm lange drücken → Anpassen → Sperrbildschirm → Widgets antippen → Scriptable → Script „Form12“.
+   rund = Tagesring (erledigt/geplant) · rechteckig = nächster Termin + danach · Zeile über der Uhr = nächster Termin.
+6. Abgleich: In der Form-12-App auf „Dashboard“ → „Widget aktualisieren“. Die Daten werden kopiert, Scriptable öffnet sich und übernimmt sie (Verschiebungen, Häkchen, Wasser, Kalorien).
+   Ohne Abgleich zeigt das Widget deinen Standard-Plan. Das Widget braucht kein Internet: Der ganze Plan bis 14.02.2027 steckt im Skript.
+
+B) Apple Watch – über Apple Kalender (offline)
+Scriptable gibt es nicht für die Watch. Der zuverlässige Weg ist der Kalender, der ohnehin auf der Watch liegt:
+1. In der App: Dashboard → Apple Kalender → Zeitraum „komplett“ → .ics exportieren → am iPhone öffnen → „Alle hinzufügen“ in einen eigenen Kalender „Form 12“.
+2. Auf der Watch: Zifferblatt lange drücken → Bearbeiten → Komplikation „Kalender“ (z. B. „Nächster Termin“) wählen. Zusätzlich zeigt der Smart Stack (Digital Crown drehen) den nächsten Termin.
+3. Die Erinnerungen vor Training/Arbeit kommen als Hinweis aufs Handgelenk.
+Alles ist danach auf der Watch gespeichert und funktioniert ohne Internet. Wenn du Termine in der App verschiebst: im Kalender den Kalender „Form 12“ löschen und neu exportieren.
+
